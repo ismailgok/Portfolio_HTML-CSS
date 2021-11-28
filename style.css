@@ -1,0 +1,750 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+    /* FONTS */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        /* background-color: var(--morp); */
+        background: var(--morp);
+        height: 100vh;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .hidden {
+        display: none !important;
+    }
+    
+     :root {
+        --mor: #2b0057;
+        --ast: #03003c;
+        --vest: #06003f;
+        --morp: #290029;
+        --morp2: #2e012e;
+        --mort: #ff1784;
+        --boost: #2b002e;
+        --val: #da4242;
+        --aesir: #330000;
+        --special: #00ffe8;
+        --bliz: #a9e8ee;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        color: white;
+        background: var(--morp2);
+    }
+    /*******************
+ NAVBAR START
+*********************/
+    
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 100vh;
+        min-height: 800px;
+        background: var(--morp);
+        justify-content: flex-start;
+    }
+    
+    .navbar .logo {
+        display: flex;
+        text-align: center;
+        font-weight: 600;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .navbar .logo h1 {
+        width: 100%;
+        font-size: 3rem;
+    }
+    /* MENÜ */
+    
+    .navbar .menu {
+        display: flex;
+        margin: 3rem auto;
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .navbar .menu ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navbar .menu ul li {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px auto;
+        width: 60%;
+        height: 35px;
+        border-bottom: 1px solid #310f33;
+    }
+    
+    .menu ul li i {
+        position: absolute;
+        margin-top: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    
+    .navbar .menu ul li a {
+        margin-left: 27px;
+        font-weight: 300;
+        font-size: 1.1rem;
+        transition: all 0.6s ease;
+    }
+    
+    .menu ul li a:hover {
+        margin-left: 35px;
+        color: rgb(226, 220, 220);
+    }
+    
+    .copyright {
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        min-height: 100px;
+        padding-right: 25px;
+        font-weight: 300;
+    }
+    
+    .copyright i {
+        font-weight: 300;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    /*******************
+ NAVBAR END
+*********************/
+    /*******************
+ HOME SIDEBAR START
+*********************/
+    
+    .section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: var(--morp2);
+    }
+    
+    .section .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--boost);
+        height: auto;
+        width: 90%;
+    }
+    
+    .section .row img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    .section .row .text {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .row .text h3 {
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-bottom: 10px
+    }
+    
+    .row .text h5 {
+        font-weight: 200;
+        font-size: 1.3em;
+    }
+    
+    .row .social {
+        border: none;
+        outline: none;
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: center;
+    }
+    
+    .social a {
+        margin-left: 10px;
+        font-size: 1.3rem;
+    }
+    
+    .social a i {
+        background: #351635;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    
+    .social a i:hover {
+        background: #201320;
+    }
+    /*******************
+ HOME SIDEBAR END
+*********************/
+    /*******************
+ ABOUT SIDEBAR START
+*********************/
+    
+    .about_section {
+        height: 1400px;
+    }
+    
+    .row-about {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+    
+    .row-about .baslik {
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        margin-top: 70px;
+        min-height: 205px;
+    }
+    
+    .row-about .baslik h1 {
+        display: flex;
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin: 2rem;
+    }
+    
+    .row-about .text {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    .row-about .text h2 {
+        font-weight: 400;
+        display: flex;
+        margin-left: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .row-about .text h2 span {
+        margin-left: 7px;
+        color: var(--bliz)
+    }
+    
+    .row-about .text p {
+        opacity: 0.872;
+        font-size: 0.95rem;
+        text-align: justify;
+        padding-left: 10px;
+        line-height: 1.5rem;
+        letter-spacing: 0.023rem;
+    }
+    
+    .row-about .table {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+    
+    .table .left_table {
+        display: flex;
+        width: 50%;
+        border-right: 2px solid #2e012e;
+        justify-content: flex-start;
+        align-items: center;
+        background: #350735;
+        padding-left: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .left_table .box {
+        display: flex;
+        width: 50%;
+        max-height: 50px;
+        justify-content: space-between;
+        padding-left: 10px;
+    }
+    
+    .left_table .box p {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        opacity: 0.85;
+    }
+    
+    .left_table .box p span {
+        font-weight: 700;
+    }
+    
+    .cv_ {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+    }
+    
+    .cv_ .btn {
+        padding: 9px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        color: var(--vest);
+        background: var(--bliz);
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: var(--special);
+    }
+    
+    .cv_ .btn:last-child {
+        margin-left: 10px;
+    }
+    /* TABLO SAĞ */
+    
+    .table .right_table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #350735;
+        width: 50%;
+        padding: 5px 20px;
+    }
+    
+    .right_table .ranks {
+        width: 90%;
+        display: flex;
+        padding-bottom: 10px;
+        flex-direction: column;
+    }
+    
+    .right_table .ranks .title {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        font-weight: 300;
+    }
+    
+    .right_table .ranks .title h4 {
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    
+    .right_table .point {
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    .point .red {
+        display: flex;
+        width: 100%;
+        height: 5px;
+        border-radius: 2rem;
+        background: rgb(201, 57, 57);
+    }
+    
+    .point .white:nth-child(1) {
+        flex-basis: 76%;
+    }
+    
+    .point .white {
+        width: 100%;
+        height: 5px;
+        background: rgb(243, 229, 229);
+    }
+    
+    .scale40 {
+        display: flex;
+        flex-basis: 70%;
+    }
+    
+    .scale60 {
+        display: flex;
+        flex-basis: 130%;
+    }
+    
+    .scale76 {
+        display: flex;
+        flex-basis: 180%;
+    }
+    
+    .scale90 {
+        display: flex;
+        flex-basis: 10%;
+    }
+    
+    .scale80 {
+        display: flex;
+        flex-basis: 20%;
+    }
+    /* EDUCATION EXPERIENCE */
+    
+    .boxs {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    
+    .boxs h2 {
+        font-weight: 600;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+    /* LEFT SIDE */
+    
+    .boxs .box {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        min-height: 500px;
+        flex-direction: column;
+    }
+    
+    .boxs .box .inline_box {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        min-height: 450px;
+        padding: 20px;
+        padding-top: 7px;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .dot {
+        opacity: 0.9;
+        margin-left: 6px;
+        position: absolute;
+        width: 1px;
+        height: 420px;
+        border: 1px solid red;
+        top: 27px;
+    }
+    
+    .ovalDot1 {
+        opacity: 0.9;
+        position: absolute;
+        width: 7px;
+        border-radius: 25px;
+        border: 7px solid red;
+        margin-top: 17px;
+        z-index: 1;
+    }
+    
+    .ovalDot2 {
+        opacity: 0.9;
+        position: absolute;
+        width: 7px;
+        border-radius: 25px;
+        border: 7px solid red;
+        margin-top: 152px;
+        z-index: 1;
+    }
+    
+    .ovalDot3 {
+        position: absolute;
+        width: 7px;
+        border-radius: 25px;
+        border: 7px solid red;
+        margin-top: 285px;
+        z-index: 1;
+    }
+    
+    .box .inline_box .side {
+        display: flex;
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    
+    .box .inline_box .side:last-child {
+        border: none;
+    }
+    
+    .side .calendar {
+        display: flex;
+        width: 100%;
+        height: 25px;
+        align-items: flex-start;
+        padding-left: 5px;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    
+    .side .calendar span {
+        display: flex;
+        position: relative;
+        font-weight: 300;
+        font-size: 15px;
+        opacity: 0.8;
+    }
+    
+    .calendar i {
+        position: absolute;
+        margin-top: 4px;
+    }
+    
+    .calendar span p {
+        margin-left: 20px;
+    }
+    
+    .side .send {
+        width: 100%;
+        height: auto;
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .side .send h3 {
+        font-weight: 400;
+        margin: 5px 0;
+    }
+    
+    .side .send p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+    /*******************
+ ABOUT SIDEBAR END
+*********************/
+    /*******************
+ SERVICES SIDEBAR START
+*********************/
+    
+    .services {
+        height: 100vh;
+        display: flex;
+        width: 100%;
+    }
+    
+    .services-row {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .services-row .baslik {
+        margin-top: 70px;
+        height: 40px;
+        width: 50%;
+    }
+    
+    .services_box {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        /* background: var(--ast) !important; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .services_box .box {
+        display: flex;
+        width: 26%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 15px;
+        height: 300px;
+        border-radius: 7px;
+        background: var(--vest);
+    }
+    
+    .services_box .box .emj {
+        border: 1px solid red;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+    
+    .emj i {
+        color: white;
+        width: 100%;
+        display: flex;
+        font-size: 3rem;
+        height: 100%;
+    }
+    
+    .services_box .box .text {
+        display: flex;
+        height: 80%;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    
+    .services_box .box .text p {
+        font-weight: 300;
+        opacity: 0.87;
+    }
+    
+    .services_box .box .text h3 {
+        width: 100%;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+    /*******************
+ SERVICES SIDEBAR END
+*********************/
+    /*******************
+ PORTFOLIO SIDEBAR START
+*********************/
+    
+    .portfolio_section {
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .portfolio-row {
+        display: flex;
+        border: 1px solid blue;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .portfolio-row .title {
+        width: 80%;
+        margin-top: 190px;
+        margin-left: 100px;
+    }
+    
+    .portfolio-row .title h3 {
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+    .portfolio-row .pMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    .portfolio-row .pMenu li {
+        padding: 11px;
+    }
+    
+    .portfolio-row .pMenu li a {
+        font-weight: 400;
+        font-size: 1.1rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    .portfolio-row .pMenu li a:hover {
+        color: var(--val)
+    }
+    
+    .pText {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        justify-content: space-around;
+    }
+    
+    .pText .box {
+        position: relative;
+        border: 7px solid rgb(255, 255, 255);
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 20%;
+        height: 40%;
+        margin-left: 5rem;
+    }
+    
+    .box a {
+        display: none;
+        margin-left: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        position: absolute;
+        color: black;
+    }
+    
+    .box i {
+        display: none;
+        position: absolute;
+        background: white;
+        color: red;
+        cursor: pointer;
+        margin-top: 160px;
+        padding: 12px;
+        margin-left: 230px;
+        border-radius: 50%;
+    }
+    
+    .pText .box img {
+        width: 100%;
+    }
+    /*******************
+ PORTFOLIO SIDEBAR END
+*********************/
